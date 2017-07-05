@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=607;
+		nextID=610;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14523.33,61.168816,5826.54};
-		dir[]={-0.04158299,-0.84837478,0.52798074};
-		up[]={-0.066612087,0.52936405,0.84576011};
-		aside[]={0.99702317,-6.7734236e-006,0.078535169};
+		pos[]={14506.772,39.832924,5924.6558};
+		dir[]={0.10486593,-0.57734931,-0.80988455};
+		up[]={0.074153595,0.81640446,-0.57267618};
+		aside[]={-0.99183005,-1.5631813e-006,-0.12843892};
 	};
 };
 binarizationWanted=0;
@@ -392,7 +392,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=489;
+		items=490;
 		class Item0
 		{
 			dataType="Marker";
@@ -3428,7 +3428,7 @@ class Mission
 			};
 			id=334;
 			type="B_Heli_Light_01_F";
-			atlOffset=236.06985;
+			atlOffset=235.69095;
 		};
 		class Item335
 		{
@@ -3447,7 +3447,7 @@ class Mission
 			};
 			id=335;
 			type="B_Heli_Light_01_F";
-			atlOffset=236.11656;
+			atlOffset=235.73766;
 		};
 		class Item336
 		{
@@ -3760,7 +3760,7 @@ class Mission
 			};
 			id=352;
 			type="B_Heli_Light_01_F";
-			atlOffset=236.29878;
+			atlOffset=235.91988;
 		};
 		class Item353
 		{
@@ -3836,7 +3836,7 @@ class Mission
 			};
 			id=356;
 			type="B_Heli_Light_01_F";
-			atlOffset=236.22768;
+			atlOffset=235.84877;
 		};
 		class Item357
 		{
@@ -3855,7 +3855,7 @@ class Mission
 			};
 			id=357;
 			type="B_Heli_Light_01_F";
-			atlOffset=235.86707;
+			atlOffset=235.48816;
 		};
 		class Item358
 		{
@@ -4682,7 +4682,7 @@ class Mission
 			};
 			id=402;
 			type="B_Heli_Light_01_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=-0.38807678;
 		};
 		class Item403
 		{
@@ -4702,6 +4702,7 @@ class Mission
 			};
 			id=403;
 			type="B_Heli_Light_01_F";
+			atlOffset=-0.37904358;
 		};
 		class Item404
 		{
@@ -4721,7 +4722,7 @@ class Mission
 			};
 			id=404;
 			type="B_Heli_Light_01_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=-0.38106537;
 		};
 		class Item405
 		{
@@ -4740,7 +4741,7 @@ class Mission
 			};
 			id=405;
 			type="B_Heli_Transport_01_F";
-			atlOffset=235.85286;
+			atlOffset=235.85284;
 		};
 		class Item406
 		{
@@ -4760,6 +4761,7 @@ class Mission
 			};
 			id=406;
 			type="B_Heli_Transport_01_F";
+			atlOffset=-1.5258789e-005;
 		};
 		class Item407
 		{
@@ -8724,7 +8726,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14506.103,7.8048019,5841.5171};
-				angles[]={0.045303639,0,6.1128521};
+				angles[]={0.045308746,0,6.1128583};
 			};
 			id=531;
 			type="ace_nightvision_ModuleSettings";
@@ -9819,7 +9821,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ACE_moduleRearmSettings_supply";
+					expression="_this setVariable ['supply',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item472
@@ -9852,7 +9873,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ACE_moduleRefuelSettings_hoseLength";
+					expression="_this setVariable ['hoseLength',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=12;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item473
@@ -11263,12 +11303,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={14532.104,8.8626623,5810.8682};
+				position[]={14532.104,8.8625984,5810.8682};
 			};
 			name="adminZeus";
 			id=600;
 			type="ModuleCurator_F";
-			atlOffset=7.6340637;
+			atlOffset=7.6339998;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11567,6 +11607,117 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item489
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14527.407,9.9263744,5809.9141};
+			};
+			name="adminZeus_1";
+			id=609;
+			type="ModuleCurator_F";
+			atlOffset=7.4840002;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198076424327";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Woof.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
